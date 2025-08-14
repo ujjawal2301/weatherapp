@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-image: url("https://files.123freevectors.com/wp-content/original/154304-bright-blue-background-vector-image.jpg");
+}
+
+.weather-container {
+    width: 400px;
+    color: #f0f8ff;
+    background: rgba(255, 255, 255, 0.1);                                                  /* Transparent white */
+    border-radius: 20px;
+    backdrop-filter: blur(10px);                                                           /* Glass blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);                                         /* Soft border */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);                                         /* Depth shadow */
+    padding: 20px;                                                                      /* Space inside */
+}
+
+.weather-container h1 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#weather-display {
+    display: flex;
+    justify-content: center;
+}
+
+#weather-input {
+    width: 80%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparent !important;
+    backdrop-filter: blur(10px);
+    color: white;
+    border: transparent;
+    border-radius: 8px;
+}
+
+/* When autofill is applied */
+/* Removes Chrome’s yellow autofill background by covering it with a transparent layer inside the input. */
+
+#weather-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* When autofill + focus */
+/* Makes the autofilled text color white */
+
+#weather-input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+}
+
+.weather-fetch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
+#weather-btn {
+    height: 48px;
+    width: 140px;
+    color: #fff;
+    background-color: #007afe;
+    font-size: 18px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.weather-result {
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.weather-result p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
