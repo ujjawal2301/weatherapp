@@ -1,4 +1,4 @@
-# 🌦️ Weather-forecast--Project
+# 🌦️ Weather-forecast-Project
 
 A simple and responsive weather application that fetches live weather data using a public API.  
 This project demonstrates **JavaScript Fetch API**, **async/await**, and **API integration** skills.
@@ -10,11 +10,6 @@ This project demonstrates **JavaScript Fetch API**, **async/await**, and **API i
 - 📡 Fetch real-time weather data from a public API  
 - 🌡 Display temperature, humidity, and weather conditions  
 - 🎨 Styled with HTML, CSS, and JavaScript
-
----
-
-## 📸 Preview
-![Weather App Screenshot](images-screenshot.png);
 
 ---
 
