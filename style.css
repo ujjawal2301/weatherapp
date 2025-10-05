@@ -6,7 +6,8 @@ body {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    background-image: url("https://files.123freevectors.com/wp-content/original/154304-bright-blue-background-vector-image.jpg");
+    background-image: url("BackgroundIMG.jpg");
+    background-size: cover;
 }
 
 .weather-container {
@@ -30,6 +31,12 @@ body {
     display: flex;
     justify-content: center;
 }
+
+ input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox sometimes dims placeholders, so set opacity if needed */
+  }
+
 
 #weather-input {
     width: 80%;
@@ -72,6 +79,7 @@ body {
     color: #fff;
     background-color: #007afe;
     font-size: 18px;
+    font-weight: 700;
     margin-top: 14px;
     border: none;
     border-radius: 8px;
@@ -81,7 +89,7 @@ body {
 
 .weather-result {
     text-align: center;
-    padding: 20px 40px;
+    padding: 10px 40px;
     border-radius: 10px;
 }
 
