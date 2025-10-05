@@ -11,14 +11,16 @@ body {
 }
 
 .weather-container {
-    width: 400px;
-    color: #f0f8ff;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    color: #f0f8ff; 
     background: rgba(255, 255, 255, 0.1);                                                  /* Transparent white */
     border-radius: 20px;
     backdrop-filter: blur(10px);                                                           /* Glass blur effect */
     border: 1px solid rgba(255, 255, 255, 0.2);                                         /* Soft border */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);                                         /* Depth shadow */
-    padding: 20px;                                                                      /* Space inside */
 }
 
 .weather-container h1 {
@@ -34,7 +36,7 @@ body {
 
  input::placeholder {
     color: #fff;
-    opacity: 1; /* Firefox sometimes dims placeholders, so set opacity if needed */
+    opacity: 1; 
   }
 
 
@@ -98,3 +100,35 @@ body {
     font-size: 18px;
 }
 
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .weather-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    input, button {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 601px) and (max-width: 900px) {
+    .weather-container {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    input, button {
+        font-size: 16px;
+    }
+}
