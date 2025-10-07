@@ -4,9 +4,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
-    background-image: url("BackgroundIMG.jpg");
+    background-image: url("https://images.unsplash.com/photo-1593012370132-c4390ff79e92?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
 }
 
@@ -104,21 +104,36 @@ body {
 /* Mobile screens */
 @media (max-width: 600px) {
     body {
+        height: 90vh;
         background-size: cover;
         padding: 10px;
     }
 
     .weather-container {
         width: 100%;
-        max-width: 100%;
+        max-width: 80%;
         margin: 10px;
-        font-size: 14px;
     }
 
-    input, button {
-        width: 100%;
-        margin-top: 8px;
+    .weather-container h1{
+        font-size: 6vw;
     }
+
+    #weather-input{
+        width: 75%;
+        font-size: 4vw;
+    }
+
+    #weather-btn{
+        height: 12vw;
+        width: 35vw;
+        font-size: 4vw;
+    }
+
+    .weather-result p{
+        font-size: 4.5vw;
+    }
+
 }
 
 /* Tablet screens */
